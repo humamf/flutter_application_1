@@ -24,14 +24,6 @@ samples, guidance on mobile development, and a full API reference. -->
 | **Kelas**       | TI.20.A2           |
 | **Mata Kuliah** | Pemrograman Mobile |
 
-### Halaman Login
+### Hasil
 
-![Login](assets/img/Login.png)
-
-### Halaman Home
-
-![Home](assets/img/Home.png)
-
-### Lupa Password
-
-![Forgot](assets/img/Forgot.png)
+![Login](images/Login.png)

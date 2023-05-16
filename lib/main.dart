@@ -34,6 +34,11 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.network(
+              'https://img.icons8.com/?size=512&id=P6W1qLRLj5Mo&format=png', // URL gambar
+              width: 100.0, // lebar gambar
+              height: 100.0, // tinggi gambar
+            ),
             Text(
               'Welcome !',
               style: TextStyle(
@@ -64,32 +69,12 @@ class _LoginPageState extends State<LoginPage> {
               ),
               obscureText: true,
             ),
-            SizedBox(height: 20.0),
+            SizedBox(height: 10.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 TextButton(
-                  onPressed: () {
-                    // Implement forgot password functionality here
-                    showDialog(
-                      context: context,
-                      builder: (context) {
-                        return AlertDialog(
-                          title: Text('Forgot Password'),
-                          content: Text(
-                              'Please check your email for password reset instructions.'),
-                          actions: [
-                            TextButton(
-                              child: Text('OK'),
-                              onPressed: () {
-                                Navigator.of(context).pop();
-                              },
-                            ),
-                          ],
-                        );
-                      },
-                    );
-                  },
+                  onPressed: () {},
                   child: Text('Forgot Password?'),
                 ),
                 ElevatedButton(
@@ -98,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                     String username = _usernameController.text;
                     String password = _passwordController.text;
                     // Perform login validation
-                    if (username == 'humam' && password == '777') {
+                    if (username == 'admin' && password == '777') {
                       // Navigate to home page or perform other actions
                       Navigator.push(
                         context,
@@ -134,6 +119,10 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                   ),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Text('Create an Account'),
                 ),
               ],
             ),
