@@ -69,7 +69,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               obscureText: true,
             ),
-            SizedBox(height: 10.0),
+            SizedBox(height: 35.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
